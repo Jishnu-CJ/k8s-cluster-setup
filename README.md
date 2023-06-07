@@ -45,7 +45,7 @@ The statement looks like below syntax,
 kubeadm join <control-plane-ip>:6443 --token <token> \
  --discovery-token-ca-cert-hash <hash>`
  
- * Then we should copy yje kkube configuration files
+ * Then we should copy the kube configuration files
  ```
  #Allow kubectl to interact with the cluster
 mkdir -p $HOME/.kube
@@ -63,6 +63,9 @@ exit
 kubectl apply -f https://raw.githubusercontent.com/flannel-io/flannel/v0.20.2/Documentation/kube-flannel.yml
 ```
 * After kubeadm init completes, you will have a working Kubernetes cluster ready to run applications. You can then use kubectl it to deploy and manage applications on the cluster., you should see the Control Plane node when you run `kubectl get nodes`.
+![k8s-nodes](https://github.com/Jishnu-CJ/k8s-cluster-setup/assets/89075369/541d0e73-92c4-4f41-a646-335c0c9b2908)
+![ClusterSetup](https://github.com/Jishnu-CJ/k8s-cluster-setup/assets/89075369/69a57fb6-03e8-49cb-bd5e-b0e3b8f23d46)
+
 
 ### Building the Worker node
 
