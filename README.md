@@ -115,4 +115,6 @@ kubeadm join <control-plane-ip>:6443 --token <token> \
  --discovery-token-ca-cert-hash <hash>
  ```
  * If the joins have been done correctly on both worker nodes, we'll see the following result,
- <img src="k8s-nodes.png">
+ ![k8s-nodes](https://github.com/Jishnu-CJ/k8s-cluster-setup/assets/89075369/541d0e73-92c4-4f41-a646-335c0c9b2908)
+
+ 
